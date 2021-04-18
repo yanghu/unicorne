@@ -2120,7 +2120,7 @@ U 1 1 608FF3C1
 P 1200 9600
 F 0 "J2" H 1307 10467 50  0000 C CNN
 F 1 "USB_C" H 1307 10376 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1350 9600 50  0001 C CNN
+F 2 "hy-keebs:USB_C_HRO_TYPE-C-31-M-12" H 1350 9600 50  0001 C CNN
 F 3 "" H 1350 9600 50  0001 C CNN
 F 4 "" H 1200 9600 50  0001 C CNN "LSCS Part"
 F 5 "C165948" H 1200 9600 50  0001 C CNN "LCSC Part"
@@ -2181,7 +2181,7 @@ U 1 1 60AE18AA
 P 6850 10250
 F 0 "J3" H 6807 10575 50  0000 C CNN
 F 1 "AudioJack4" H 6807 10484 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 6850 10250 50  0001 C CNN
+F 2 "hy-keebs:TRRS-PJ-320Atrrs" H 6850 10250 50  0001 C CNN
 F 3 "" H 6850 10250 50  0001 C CNN
 	1    6850 10250
 	1    0    0    -1  
@@ -2192,7 +2192,7 @@ U 1 1 60AE482B
 P 12450 9000
 F 0 "J1" H 12407 9325 50  0000 C CNN
 F 1 "AudioJack4" H 12407 9234 50  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 12450 9000 50  0001 C CNN
+F 2 "hy-keebs:TRRS-PJ-320Atrrs" H 12450 9000 50  0001 C CNN
 F 3 "" H 12450 9000 50  0001 C CNN
 	1    12450 9000
 	1    0    0    -1  
@@ -2462,28 +2462,62 @@ Text Label 7800 8550 2    50   ~ 0
 row0,2
 Text Label 9100 8250 0    50   ~ 0
 row0,3
-Text Label 6450 7800 0    50   ~ 0
+Text Label 7800 8850 2    50   ~ 0
 col0
-Text Label 6450 7900 0    50   ~ 0
+Text Label 7800 8450 2    50   ~ 0
 col1
-Text Label 6450 8000 0    50   ~ 0
+Text Label 7800 8350 2    50   ~ 0
 col2
-Text Label 6450 8100 0    50   ~ 0
+Text Label 9100 9550 0    50   ~ 0
 col3
-Text Label 6450 8200 0    50   ~ 0
+Text Label 9100 9450 0    50   ~ 0
 col4
-Text Label 6450 8300 0    50   ~ 0
+Text Label 9100 9350 0    50   ~ 0
 col5
-Text Label 6450 8400 0    50   ~ 0
+Text Label 14300 7750 0    50   ~ 0
 col6
-Text Label 6450 8500 0    50   ~ 0
+Text Label 14300 7850 0    50   ~ 0
 col7
-Text Label 6450 8600 0    50   ~ 0
+Text Label 14300 7950 0    50   ~ 0
 col8
-Text Label 6450 8700 0    50   ~ 0
+Text Label 14300 8050 0    50   ~ 0
 col9
-Text Label 6450 8800 0    50   ~ 0
+Text Label 14300 8150 0    50   ~ 0
 col10
-Text Label 6450 8900 0    50   ~ 0
+Text Label 14300 8250 0    50   ~ 0
 col11
+$Comp
+L Device:Rotary_Encoder_Switch SW2
+U 1 1 607B9801
+P 13650 4450
+F 0 "SW2" H 13650 4817 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 13650 4726 50  0000 C CNN
+F 2 "Keebio-Parts:RotaryEncoder_EC11" H 13500 4610 50  0001 C CNN
+F 3 "" H 13650 4710 50  0001 C CNN
+	1    13650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW3
+U 1 1 607C274B
+P 13650 5250
+F 0 "SW3" H 13650 5617 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 13650 5526 50  0000 C CNN
+F 2 "Keebio-Parts:RotaryEncoder_EC11" H 13500 5410 50  0001 C CNN
+F 3 "" H 13650 5510 50  0001 C CNN
+	1    13650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6950 7800 6950
+Wire Wire Line
+	7800 7150 7550 7150
+Text Label 14300 6850 0    50   ~ 0
+row1,0
+Text Label 14300 7150 0    50   ~ 0
+row1,3
+Text Label 14300 7050 0    50   ~ 0
+row1,2
+Text Label 14300 6950 0    50   ~ 0
+row1,1
 $EndSCHEMATC
