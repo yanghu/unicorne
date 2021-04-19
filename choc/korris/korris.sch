@@ -19,7 +19,7 @@ U 1 1 606FF544
 P 8500 8250
 F 0 "U3" H 8450 9931 50  0000 C CNN
 F 1 "STM32F072CBUx" H 8450 9840 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 7900 6850 50  0001 R CNN
+F 2 "breakout_pins:Dual_MCU_QFP_QFN_48_with_breakout_pins" H 7900 6850 50  0001 R CNN
 F 3 "" H 8500 8250 50  0001 C CNN
 F 4 "C92504" H 8500 8250 50  0001 C CNN "LCSC Part"
 F 5 "https://jlcpcb.com/parts/componentSearch?searchTxt=C92504" H 8500 8250 50  0001 C CNN "url"
@@ -2454,11 +2454,11 @@ F 3 "" H 8950 10500 50  0001 C CNN
 	1    8950 10500
 	1    0    0    -1  
 $EndComp
-Text Label 7800 8750 2    50   ~ 0
+Text Label 7800 8550 2    50   ~ 0
 row0,0
 Text Label 7800 8650 2    50   ~ 0
 row0,1
-Text Label 7800 8550 2    50   ~ 0
+Text Label 7800 8750 2    50   ~ 0
 row0,2
 Text Label 9100 8250 0    50   ~ 0
 row0,3
@@ -2520,4 +2520,22 @@ Text Label 14300 7050 0    50   ~ 0
 row1,2
 Text Label 14300 6950 0    50   ~ 0
 row1,1
+NoConn ~ 9100 8350
+NoConn ~ 9100 8450
+NoConn ~ 9100 8550
+NoConn ~ 9100 8650
+NoConn ~ 9100 8750
+NoConn ~ 9100 8850
+NoConn ~ 9100 8950
+NoConn ~ 9100 9050
+NoConn ~ 9100 8050
+NoConn ~ 9100 8150
+NoConn ~ 7800 8050
+NoConn ~ 7800 8150
+NoConn ~ 7800 8250
+NoConn ~ 7800 8950
+NoConn ~ 7800 9250
+NoConn ~ 7800 9350
+NoConn ~ 7800 9450
+NoConn ~ 7800 9550
 $EndSCHEMATC

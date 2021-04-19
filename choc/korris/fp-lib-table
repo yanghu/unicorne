@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name switches)(type KiCad)(uri H:/docs/Designs/keyboard/korris/fp/ferris.pretty/switches.pretty)(options "")(descr ""))
+  (lib (name breakout_pins)(type KiCad)(uri H:/docs/Designs/keyboard/korris/fp/ferris.pretty/breakout_pins.pretty)(options "")(descr ""))
+  (lib (name panelization)(type KiCad)(uri H:/docs/Designs/keyboard/korris/fp/ferris.pretty/panelization.pretty)(options "")(descr ""))
 )
