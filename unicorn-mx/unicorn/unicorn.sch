@@ -19,7 +19,7 @@ U 1 1 606FF544
 P 8500 8250
 F 0 "U3" H 8450 9931 50  0000 C CNN
 F 1 "STM32F072CBUx" H 8450 9840 50  0000 C CNN
-F 2 "breakout_pins:Dual_MCU_QFP_QFN_48_with_breakout_pins" H 7900 6850 50  0001 R CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm_ThermalVias" H 7900 6850 50  0001 R CNN
 F 3 "" H 8500 8250 50  0001 C CNN
 F 4 "C92504" H 8500 8250 50  0001 C CNN "LCSC Part"
 F 5 "https://jlcpcb.com/parts/componentSearch?searchTxt=C92504" H 8500 8250 50  0001 C CNN "url"
@@ -1392,9 +1392,9 @@ Text GLabel 7550 6950 0    50   Input ~ 0
 NRST
 Text GLabel 7550 7150 0    50   Input ~ 0
 BOOT0
-Text GLabel 7600 9050 0    50   Input ~ 0
+Text GLabel 7600 8650 0    50   Input ~ 0
 i2c_scl
-Text GLabel 7600 9150 0    50   Input ~ 0
+Text GLabel 7600 8750 0    50   Input ~ 0
 i2c_sda
 $Comp
 L power:+3.3V #PWR08
@@ -2129,9 +2129,9 @@ $EndComp
 Wire Wire Line
 	2250 7500 2500 7500
 Wire Wire Line
-	7600 9050 7800 9050
+	7600 8650 7800 8650
 Wire Wire Line
-	7600 9150 7800 9150
+	7600 8750 7800 8750
 Text Label 9100 9150 0    50   ~ 0
 D-
 Text Label 9100 9250 0    50   ~ 0
@@ -2151,7 +2151,7 @@ Text Label 7800 8450 2    50   ~ 0
 col3
 Text Label 7800 8550 2    50   ~ 0
 col4
-Text Label 7800 8650 2    50   ~ 0
+Text Label 9100 9350 0    50   ~ 0
 col5
 Text Label 9100 8050 0    50   ~ 0
 col6
@@ -2161,9 +2161,9 @@ Text Label 9100 8250 0    50   ~ 0
 col8
 Text Label 9100 8350 0    50   ~ 0
 col9
-Text Label 9100 8450 0    50   ~ 0
+Text Label 9100 8650 0    50   ~ 0
 col10
-Text Label 9100 8550 0    50   ~ 0
+Text Label 9100 8750 0    50   ~ 0
 col11
 $Comp
 L Device:Rotary_Encoder_Switch SW2
@@ -2191,12 +2191,9 @@ Wire Wire Line
 	7550 6950 7800 6950
 Wire Wire Line
 	7800 7150 7550 7150
-NoConn ~ 9100 8650
-NoConn ~ 9100 8750
 NoConn ~ 9100 9050
 NoConn ~ 7800 8250
 NoConn ~ 7800 9450
-NoConn ~ 7800 9550
 Text Label 9100 8850 0    50   ~ 0
 row3
 Wire Wire Line
@@ -2415,4 +2412,235 @@ F 3 "~" H 4550 5900 50  0001 C CNN
 	1    4550 5900
 	1    0    0    -1  
 $EndComp
+$Comp
+L LED:WS2812S D51
+U 1 1 60A0F7F3
+P 11350 4900
+F 0 "D51" H 11694 4946 50  0000 L CNN
+F 1 "WS2812S" H 11694 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 11400 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 11450 4525 50  0001 L TNN
+F 4 "C114584" H 11350 4900 50  0001 C CNN "LCSC Part"
+	1    11350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D52
+U 1 1 60A12033
+P 12100 4900
+F 0 "D52" H 12444 4946 50  0000 L CNN
+F 1 "WS2812S" H 12444 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 12150 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 12200 4525 50  0001 L TNN
+F 4 "C114584" H 12100 4900 50  0001 C CNN "LCSC Part"
+	1    12100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D53
+U 1 1 60A12D96
+P 12900 4900
+F 0 "D53" H 13244 4946 50  0000 L CNN
+F 1 "WS2812S" H 13244 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 12950 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 13000 4525 50  0001 L TNN
+F 4 "C114584" H 12900 4900 50  0001 C CNN "LCSC Part"
+	1    12900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D50
+U 1 1 60A131D5
+P 10650 4900
+F 0 "D50" H 10994 4946 50  0000 L CNN
+F 1 "WS2812S" H 10994 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 10700 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 10750 4525 50  0001 L TNN
+F 4 "C114584" H 10650 4900 50  0001 C CNN "LCSC Part"
+	1    10650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D54
+U 1 1 60A14226
+P 13700 4900
+F 0 "D54" H 14044 4946 50  0000 L CNN
+F 1 "WS2812S" H 14044 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 13750 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 13800 4525 50  0001 L TNN
+F 4 "C114584" H 13700 4900 50  0001 C CNN "LCSC Part"
+	1    13700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D49
+U 1 1 60A14728
+P 9850 4900
+F 0 "D49" H 10194 4946 50  0000 L CNN
+F 1 "WS2812S" H 10194 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 9900 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 9950 4525 50  0001 L TNN
+F 4 "C114584" H 9850 4900 50  0001 C CNN "LCSC Part"
+	1    9850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D55
+U 1 1 60A15440
+P 14400 4900
+F 0 "D55" H 14744 4946 50  0000 L CNN
+F 1 "WS2812S" H 14744 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 14450 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 14500 4525 50  0001 L TNN
+F 4 "C114584" H 14400 4900 50  0001 C CNN "LCSC Part"
+	1    14400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812S D48
+U 1 1 60A15870
+P 9100 4900
+F 0 "D48" H 9444 4946 50  0000 L CNN
+F 1 "WS2812S" H 9444 4855 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 9150 4600 50  0001 L TNN
+F 3 "http://www.world-semi.com/DownLoadFile/115" H 9200 4525 50  0001 L TNN
+F 4 "C114584" H 9100 4900 50  0001 C CNN "LCSC Part"
+	1    9100 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 9550 0    50   Input ~ 0
+LED
+Wire Wire Line
+	7600 9550 7800 9550
+Text GLabel 8700 4900 0    50   Input ~ 0
+LED
+Wire Wire Line
+	8700 4900 8800 4900
+Wire Wire Line
+	9400 4900 9550 4900
+Wire Wire Line
+	10150 4900 10350 4900
+Wire Wire Line
+	10950 4900 11050 4900
+Wire Wire Line
+	11650 4900 11800 4900
+Wire Wire Line
+	12400 4900 12600 4900
+Wire Wire Line
+	13200 4900 13400 4900
+Wire Wire Line
+	14000 4900 14100 4900
+NoConn ~ 14700 4900
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 60AECD45
+P 8700 4600
+F 0 "#PWR0105" H 8700 4450 50  0001 C CNN
+F 1 "+3.3V" H 8715 4773 50  0000 C CNN
+F 2 "" H 8700 4600 50  0001 C CNN
+F 3 "" H 8700 4600 50  0001 C CNN
+	1    8700 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4600 9000 4600
+Connection ~ 9000 4600
+Wire Wire Line
+	9000 4600 9100 4600
+Connection ~ 9100 4600
+Wire Wire Line
+	9100 4600 9750 4600
+Connection ~ 9750 4600
+Wire Wire Line
+	9750 4600 9850 4600
+Connection ~ 9850 4600
+Wire Wire Line
+	9850 4600 10550 4600
+Connection ~ 10550 4600
+Wire Wire Line
+	10550 4600 10650 4600
+Connection ~ 10650 4600
+Wire Wire Line
+	10650 4600 11250 4600
+Connection ~ 11250 4600
+Wire Wire Line
+	11250 4600 11350 4600
+Connection ~ 11350 4600
+Wire Wire Line
+	11350 4600 12000 4600
+Connection ~ 12000 4600
+Wire Wire Line
+	12000 4600 12100 4600
+Connection ~ 12100 4600
+Wire Wire Line
+	12100 4600 12800 4600
+Connection ~ 12800 4600
+Wire Wire Line
+	12800 4600 12900 4600
+Connection ~ 12900 4600
+Wire Wire Line
+	12900 4600 13600 4600
+Connection ~ 13600 4600
+Wire Wire Line
+	13600 4600 13700 4600
+Connection ~ 13700 4600
+Wire Wire Line
+	13700 4600 14300 4600
+Connection ~ 14300 4600
+Wire Wire Line
+	14300 4600 14400 4600
+$Comp
+L power:GND #PWR0106
+U 1 1 60AFEA92
+P 8700 5200
+F 0 "#PWR0106" H 8700 4950 50  0001 C CNN
+F 1 "GND" H 8705 5027 50  0000 C CNN
+F 2 "" H 8700 5200 50  0001 C CNN
+F 3 "" H 8700 5200 50  0001 C CNN
+	1    8700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 5200 9100 5200
+Connection ~ 9100 5200
+Wire Wire Line
+	9100 5200 9850 5200
+Connection ~ 9850 5200
+Wire Wire Line
+	9850 5200 10650 5200
+Connection ~ 10650 5200
+Wire Wire Line
+	10650 5200 11350 5200
+Connection ~ 11350 5200
+Wire Wire Line
+	11350 5200 12100 5200
+Connection ~ 12100 5200
+Wire Wire Line
+	12100 5200 12900 5200
+Connection ~ 12900 5200
+Wire Wire Line
+	12900 5200 13700 5200
+Connection ~ 13700 5200
+Wire Wire Line
+	13700 5200 14400 5200
+$Comp
+L Device:Buzzer BZ1
+U 1 1 60B66FD1
+P 11600 9000
+F 0 "BZ1" H 11752 9029 50  0000 L CNN
+F 1 "Buzzer" H 11752 8938 50  0000 L CNN
+F 2 "hy-keebs:Piezo-KLJ-1625" V 11575 9100 50  0001 C CNN
+F 3 "" V 11575 9100 50  0001 C CNN
+F 4 "C201041" H 11600 9000 50  0001 C CNN "LCSC Part"
+	1    11600 9000
+	1    0    0    -1  
+$EndComp
+Text Label 11500 8900 2    50   ~ 0
+buzzer_p
+Text Label 11500 9100 2    50   ~ 0
+buzzer_n
+Text Label 9100 8450 0    50   ~ 0
+buzzer_p
+Text Label 9100 8550 0    50   ~ 0
+buzzer_n
 $EndSCHEMATC
