@@ -1,4 +1,4 @@
-docs.board.kibot.yaml
-docs.schema.kibot.yaml
-bom.ibom.kibot.yaml
-plot.green-hasl.kibot.yaml
+automation/docs.board.kibot.yaml
+automation/docs.schema.kibot.yaml
+automation/bom.ibom.kibot.yaml
+automation/plot.green-hasl.kibot.yaml
