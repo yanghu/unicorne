@@ -1,0 +1,24 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: false
+  check_zone_fills: false
+  ignore_unconnected: true
+
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: docs
+    options:
+      output: '%f-%i.%x' #[string='%f-%i%v.%x'] filename for the output PDF (%i=schematic %x=pdf). Affected by global options.
+
+  - name: 'print schema'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: docs/img
+    options:
+      output: '%f-%i.%x' #[string='%f-%i%v.%x'] filename for the output SVG (%i=schematic %x=svg). Affected by global options.

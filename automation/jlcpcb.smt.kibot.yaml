@@ -1,0 +1,64 @@
+kibot:
+  version: 1
+
+filters:
+  - name: only_jlc_parts
+    comment: 'Only parts with JLC (LCSC) code'
+    type: generic
+    include_only:
+      - column: 'LCSC Part'
+        regex: '^C\d+'
+
+variants:
+  - name: rotated
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: rotated
+    pre_transform: _rot_footprint
+
+outputs:
+  - name: 'JLCPCB_position'
+    comment: "Pick and place file, JLCPCB style"
+    type: position
+    dir: 'fab'
+    options:
+      variant: rotated
+      output: '%f-%i%v_cpl.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: true
+      only_smd: true
+      columns:
+        - id: Ref
+          name: Designator
+        - Val
+        - Package
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
+
+  - name: 'JLCPCB_bom'
+    comment: "BoM for JLCPCB"
+    dir: 'fab'
+    type: bom
+    options:
+      output: '%f_%i_jlc.%x'
+      exclude_filter: 'only_jlc_parts'
+      ref_separator: ','
+      columns:
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - Footprint
+        - field: 'LCSC Part'
+          name: 'LCSC Part #'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
