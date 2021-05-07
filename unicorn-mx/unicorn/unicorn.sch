@@ -2132,9 +2132,9 @@ F 3 "" H 8950 10500 50  0001 C CNN
 	1    8950 10500
 	1    0    0    -1  
 $EndComp
-Text Label 7800 8450 2    50   ~ 0
+Text Label 7800 9450 2    50   ~ 0
 col3
-Text Label 7800 8550 2    50   ~ 0
+Text Label 7800 9550 2    50   ~ 0
 col4
 Text Label 9100 9350 0    50   ~ 0
 col5
@@ -2176,10 +2176,7 @@ Wire Wire Line
 	7550 6950 7800 6950
 Wire Wire Line
 	7800 7150 7550 7150
-NoConn ~ 9100 9050
-NoConn ~ 7800 8250
-NoConn ~ 7800 9450
-Text Label 9100 8850 0    50   ~ 0
+Text Label 9100 8950 0    50   ~ 0
 row3
 Wire Wire Line
 	5350 1750 7850 1750
@@ -2199,13 +2196,13 @@ Wire Wire Line
 	5350 3700 7850 3700
 Connection ~ 5350 3700
 Connection ~ 7850 3700
-Text Label 7800 8350 2    50   ~ 0
+Text Label 7800 9350 2    50   ~ 0
 col2
 Text Label 9100 9550 0    50   ~ 0
 col1
 Text Label 9100 9450 0    50   ~ 0
 col0
-Text Label 9100 8950 0    50   ~ 0
+Text Label 9100 9050 0    50   ~ 0
 row2
 Text Label 7800 8850 2    50   ~ 0
 row1
@@ -2493,10 +2490,10 @@ F 4 "C114584" H 9100 4900 50  0001 C CNN "LCSC Part"
 	1    9100 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 7600 9550 0    50   Input ~ 0
-LED
+Text GLabel 7600 8450 0    50   Input ~ 0
+LED_PWM
 Wire Wire Line
-	7600 9550 7800 9550
+	7600 8450 7800 8450
 Text GLabel 8100 4900 0    50   Input ~ 0
 LED
 Wire Wire Line
@@ -2611,11 +2608,10 @@ Text Label 11500 8900 2    50   ~ 0
 buzzer_p
 Text Label 11500 9100 2    50   ~ 0
 buzzer_n
-Text Label 9100 8450 0    50   ~ 0
+Text Label 9100 8850 0    50   ~ 0
 buzzer_p
-Text Label 9100 8550 0    50   ~ 0
+Text Label 10650 9100 0    50   ~ 0
 buzzer_n
-NoConn ~ 7800 9350
 $Comp
 L power:+5V #PWR0105
 U 1 1 60906889
@@ -2711,4 +2707,213 @@ NoConn ~ 7800 7650
 NoConn ~ 7800 7750
 NoConn ~ 7800 7850
 NoConn ~ 7800 9050
+$Comp
+L power:GND #PWR0109
+U 1 1 609AC589
+P 10650 9300
+F 0 "#PWR0109" H 10650 9050 50  0001 C CNN
+F 1 "GND" H 10655 9127 50  0000 C CNN
+F 2 "" H 10650 9300 50  0001 C CNN
+F 3 "" H 10650 9300 50  0001 C CNN
+	1    10650 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 9100 10650 9300
+NoConn ~ 7800 8350
+NoConn ~ 7800 8250
+NoConn ~ 9100 8450
+NoConn ~ 9100 8550
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 60B178A8
+P 7000 4300
+F 0 "JP1" H 7000 4505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7000 4414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7000 4300 50  0001 C CNN
+F 3 "~" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 8550 0    50   Input ~ 0
+LED_SPI
+Wire Wire Line
+	7600 8550 7800 8550
+Text GLabel 6700 4650 0    50   Input ~ 0
+LED_PWM
+Text GLabel 6700 4300 0    50   Input ~ 0
+LED_SPI
+Wire Wire Line
+	6700 4300 6850 4300
+Wire Wire Line
+	6700 4650 6850 4650
+Text GLabel 7550 4300 2    50   Input ~ 0
+LED
+Wire Wire Line
+	7150 4300 7400 4300
+Wire Wire Line
+	7400 4300 7400 4650
+Wire Wire Line
+	7400 4650 7150 4650
+Connection ~ 7400 4300
+Wire Wire Line
+	7400 4300 7550 4300
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 60C4E8D0
+P 7000 4650
+F 0 "JP2" H 7000 4855 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7000 4764 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7000 4650 50  0001 C CNN
+F 3 "~" H 7000 4650 50  0001 C CNN
+	1    7000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60C512C1
+P 7000 4900
+F 0 "R9" H 7070 4946 50  0000 L CNN
+F 1 "0" H 7070 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4900 50  0001 C CNN
+F 3 "" H 7000 4900 50  0001 C CNN
+F 4 "C21189" H 7000 4900 50  0001 C CNN "LCSC Part"
+	1    7000 4900
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 4900 0    50   Input ~ 0
+LED_PWM
+Wire Wire Line
+	6700 4900 6850 4900
+Wire Wire Line
+	7150 4900 7400 4900
+Wire Wire Line
+	7400 4900 7400 4650
+Connection ~ 7400 4650
+$Comp
+L Connector:TestPoint NRST1
+U 1 1 60CC3A36
+P 13650 6100
+F 0 "NRST1" H 13592 6126 50  0000 R CNN
+F 1 "TestPoint" H 13592 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 13850 6100 50  0001 C CNN
+F 3 "" H 13850 6100 50  0001 C CNN
+	1    13650 6100
+	-1   0    0    1   
+$EndComp
+Text GLabel 13400 6000 1    50   Input ~ 0
+BOOT0
+Text GLabel 13650 6000 1    50   Input ~ 0
+NRST
+$Comp
+L power:+3.3V #PWR09
+U 1 1 60D29157
+P 13950 5950
+F 0 "#PWR09" H 13950 5800 50  0001 C CNN
+F 1 "+3.3V" H 13965 6123 50  0000 C CNN
+F 2 "" H 13950 5950 50  0001 C CNN
+F 3 "" H 13950 5950 50  0001 C CNN
+	1    13950 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 60D2A5AB
+P 14250 5950
+F 0 "#PWR012" H 14250 5800 50  0001 C CNN
+F 1 "+5V" H 14265 6123 50  0000 C CNN
+F 2 "" H 14250 5950 50  0001 C CNN
+F 3 "" H 14250 5950 50  0001 C CNN
+	1    14250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 60D2B5E2
+P 14500 5950
+F 0 "#PWR013" H 14500 5700 50  0001 C CNN
+F 1 "GND" H 14505 5777 50  0000 C CNN
+F 2 "" H 14500 5950 50  0001 C CNN
+F 3 "" H 14500 5950 50  0001 C CNN
+	1    14500 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint BOOT0
+U 1 1 60D2C9A6
+P 13400 6100
+F 0 "BOOT0" H 13342 6126 50  0000 R CNN
+F 1 "TestPoint" H 13342 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 13600 6100 50  0001 C CNN
+F 3 "" H 13600 6100 50  0001 C CNN
+	1    13400 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint 3V3
+U 1 1 60D2CD80
+P 13950 6100
+F 0 "3V3" H 13892 6126 50  0000 R CNN
+F 1 "TestPoint" H 13892 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14150 6100 50  0001 C CNN
+F 3 "" H 14150 6100 50  0001 C CNN
+	1    13950 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint 5V1
+U 1 1 60D2D3F8
+P 14250 6100
+F 0 "5V1" H 14192 6126 50  0000 R CNN
+F 1 "TestPoint" H 14192 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14450 6100 50  0001 C CNN
+F 3 "" H 14450 6100 50  0001 C CNN
+	1    14250 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint GND1
+U 1 1 60D2D866
+P 14500 6100
+F 0 "GND1" H 14442 6126 50  0000 R CNN
+F 1 "TestPoint" H 14442 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 14700 6100 50  0001 C CNN
+F 3 "" H 14700 6100 50  0001 C CNN
+	1    14500 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13400 6000 13400 6100
+Wire Wire Line
+	13650 6000 13650 6100
+Wire Wire Line
+	13950 5950 13950 6100
+Wire Wire Line
+	14250 5950 14250 6100
+Wire Wire Line
+	14500 5950 14500 6100
+$Comp
+L Connector:TestPoint GND2
+U 1 1 60E2F852
+P 14950 6100
+F 0 "GND2" H 14892 6126 50  0000 R CNN
+F 1 "TestPoint" H 14892 6217 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 15150 6100 50  0001 C CNN
+F 3 "" H 15150 6100 50  0001 C CNN
+	1    14950 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60E2FEB7
+P 14950 5950
+F 0 "#PWR0111" H 14950 5700 50  0001 C CNN
+F 1 "GND" H 14955 5777 50  0000 C CNN
+F 2 "" H 14950 5950 50  0001 C CNN
+F 3 "" H 14950 5950 50  0001 C CNN
+	1    14950 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14950 5950 14950 6100
 $EndSCHEMATC
