@@ -7,12 +7,9 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
   filters:
-    - filter: 'Courtyards overlap'
-      error: '45'
-      regex: 'Courtyards overlap'
-    - filter: 'Footprint has no courtyard defined'
-      error: '46'
-      regex: 'Footprint LOGO'
+    - filter: 'Pad too close'
+      error: '19'
+      regex: 'of SW(2|3)'
 
 outputs:
   - name: 'print board mechanics'
