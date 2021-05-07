@@ -1,0 +1,40 @@
+kibot:
+  version: 1
+
+filters:
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+
+variants:
+  - name: default
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: ''
+    pre_transform: fix_rotation
+
+outputs:
+  - name: 'https://jlcpcb.com/'
+    comment: '-cpl.csv'
+    type: 'position'
+    dir: 'gerbers'
+    options:
+      variant: default
+      format: CSV
+      output: '%f-cpl.%x'
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: true
+      columns:
+        - id: Ref
+          name: Designator
+        - Val
+        - Package
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
