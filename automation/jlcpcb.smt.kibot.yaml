@@ -9,20 +9,12 @@ filters:
       - column: 'LCSC Part'
         regex: '^C\d+'
 
-variants:
-  - name: rotated
-    comment: 'Just a place holder for the rotation filter'
-    type: kibom
-    variant: rotated
-    pre_transform: _rot_footprint
-
 outputs:
   - name: 'JLCPCB_position'
     comment: "Pick and place file, JLCPCB style"
     type: position
     dir: 'fab/%f'
     options:
-      variant: rotated
       output: '%f-%i%v_cpl.%x'
       format: CSV
       units: millimeters
