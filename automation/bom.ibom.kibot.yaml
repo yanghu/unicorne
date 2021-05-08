@@ -33,7 +33,7 @@ outputs:
       # IBoM option, avoid using in conjunction with KiBot variants/filters
       dnp_field: ''
       # [string=''] Comma separated list of extra fields to pull from netlist or xml file
-      # extra_fields: 'MPN'
+      extra_fields: 'LCSC Part'
       # [boolean=false] Hide footprint pads by default
       hide_pads: false
       # [boolean=false] Hide silkscreen by default
