@@ -12,10 +12,13 @@ on the secondary side.
 
 ## Summary of board features
 
+* Audio buzzer
+* Rotary encoder
+* Underglow RGB LEDs
+* SMT32 MCU
 * Column stagger similar to Kyria.
 * Corne-style thumb cluster with extra inner key: I feel Kyria's thumb cluster 
 is too much and the outer column is hard to reach for me. 
 * Thumb cluster shifted 0.25u to the middle.
-* USB connector moved to top-right corner.
 * TRRS jack moved to face top like Ferris. This would allow me to use touchpad
 if the boards are used with a laptop.

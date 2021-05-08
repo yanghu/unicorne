@@ -29,3 +29,5 @@ fp-info-cache
 *.csv
 gerber/
 gerber.zip
+docs/
+fab/
