@@ -8,6 +8,7 @@
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
+*.pro-bak
 *.kicad_prl
 *.sch-bak
 *~
@@ -31,3 +32,4 @@ gerber/
 gerber.zip
 docs/
 fab/
+kibot_errors.filter
