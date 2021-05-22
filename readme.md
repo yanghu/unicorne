@@ -33,6 +33,7 @@ page](https://yanghu.github.io/unicorne/artifacts/ibom/unicorn-ibom.html)
 
 ![keyboard](artifacts/pics/top-black.jpg)
 ![keyboard2](artifacts/pics/red-glow.jpg)
+![pcb1](artifacts/generated/unicorn-bottom.svg)
 
 ## Why I designed this board
 
