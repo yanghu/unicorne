@@ -8,7 +8,7 @@ outputs:
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
     type: gerber
-    dir: fab/gerbers
+    dir: 'fab/gerbers'
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -47,7 +47,7 @@ outputs:
   - name: JLCPCB_drill
     comment: Drill files compatible with JLCPCB
     type: excellon
-    dir: fab/gerbers
+    dir: 'fab/gerbers'
     options:
       pth_and_npth_single_file: false
       pth_id: '-PTH'
@@ -58,7 +58,7 @@ outputs:
   - name: JLCPCB
     comment: ZIP file for JLCPCB
     type: compress
-    dir: fab
+    dir: 'fab'
     options:
       files:
         - from_output: JLCPCB_gerbers
