@@ -37,12 +37,17 @@ jobs:
           board: 'unicorn-mx/unicorn/unicorn.kicad_pcb'
         # optional - verbose output info
           verbose: 1
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'release.zip'
+          path: 'fab/'
       # Runs a set of commands using the runners shell
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: fab/*
+          file: 'release.zip'
           tag: ${{ github.ref }}
       - name: upload results
         uses: actions/upload-artifact@v2
