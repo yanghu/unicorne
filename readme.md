@@ -23,14 +23,15 @@ is too much and the outer column is hard to reach for me.
 
 ## Links
 
-* You can find the PCB design [here](unicorne-mx/unicorne). 
-* The bom can be found at [ibom
-page](https://yanghu.github.io/unicorne/artifacts/ibom/unicorn-ibom.html)
-* QMK firmware for the keyboard is currently on my personal
-[fork](https://github.com/yanghu/qmk_firmware/tree/unicorne/keyboards/yanghu/unicorne).
-* [Keyboard build instructions](guide/build.md)
+* [PCB repo](unicorne-mx/unicorne).
+* [PCB ibom
+](https://yanghu.github.io/unicorne/artifacts/ibom/unicorn-ibom.html)
+* [Fabrication files and firmware](https://github.com/yanghu/unicorne/releases/tag/v1.0)
+* [QMK firmware repo](https://github.com/yanghu/qmk_firmware/tree/unicorne/keyboards/yanghu/unicorne).
+* [Build guide](https://github.com/yanghu/unicorne/wiki/Build-guide)
 
 
+![hand](artifacts/pics/hand.jpg)
 ![keyboard](artifacts/pics/top-black.jpg)
 ![keyboard2](artifacts/pics/red-glow.jpg)
 ![pcb1](artifacts/generated/unicorn-bottom.svg)
