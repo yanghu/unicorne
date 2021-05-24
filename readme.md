@@ -6,7 +6,7 @@ This is the keyboard design files for my own use, inspired by
 [Ferris](https://github.com/pierrechevalier83/ferris), as well as
 [Reviung41](https://github.com/gtips/reviung) and others.
 
-The name means "uni(fied)corne".
+The name means "uni(single-piece)corne".
 
 ## Summary of board features
 
